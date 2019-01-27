@@ -5,9 +5,9 @@ class RegForm extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            name: '',
-            email: '',
-            password: ''
+            name: 'Name',
+            email: 'Email',
+            password: 'Password'
         };
 
         this.handleNameChange = this.handleNameChange.bind(this);
@@ -34,33 +34,49 @@ class RegForm extends React.Component {
     render() {
         return (
             <div>
+            <div className="field">
             <form>
-                <label>
-                    Name:
-                    <input type="text" name='name' onChange={this.handleNameChange} />
-                </label>
+                    <input className="input is-medium is-rounded" type="text" name='name' placeholder='name' onChange={this.handleNameChange} />
             </form>
+                </div>
+                <div className="field">
             <form>
-                <label>
-                    Email:
-                    <input type="text" name='email' onChange={this.handleEmailChange} />
-                </label>
+                    <input className="input is-medium is-rounded" type="text" name='email' placeholder='email' onChange={this.handleEmailChange} />
             </form>
+                </div>
+                <div className="field">
             <form>
+<<<<<<< HEAD
                 <label>
                     Password:
-                    <input type="text" name='password' onChange={this.handlePasswordChange} />
+                    <input type="password" name='password' onChange={this.handlePasswordChange} />
                 </label>
+=======
+                    <input className="input is-medium is-rounded" type="text" name='password' placeholder='password' onChange={this.handlePasswordChange} />
+>>>>>>> a504c07f82e1f2f7f970ef2602a9dd5666e047c8
             </form>
+                </div>
             <form onSubmit={this.handleSubmit}>
                 <input type="submit" value="Submit" />
             </form>
             </div>
+    // <div>
+    //     <Field>
+    //     <Input className="input is-medium is-rounded" type="text" name='name' placeholder='name' onChange={this.handleNameChange} />
+    // </Field>
+    // <Field>
+    //     <Input className="input is-medium is-rounded" type="text" name='email' placeholder='email' onChange={this.handleEmailChange} />
+    // </Field>
+    // <Field>
+    //     <Input className="input is-medium is-rounded" type="text" name='password' placeholder='password' onChange={this.handlePasswordChange} />
+    // </Field>
+    //
+    // <form onSubmit={this.handleSubmit}>
+    //         <input type="submit" value="Submit" />
+    //         </form>
 
         );
     }
 }
 
 export default RegForm;
-
-
