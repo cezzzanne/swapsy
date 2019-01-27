@@ -53,21 +53,6 @@ class RegForm extends React.Component {
                 <input type="submit" value="Submit" />
             </form>
             </div>
-    // <div>
-    //     <Field>
-    //     <Input className="input is-medium is-rounded" type="text" name='name' placeholder='name' onChange={this.handleNameChange} />
-    // </Field>
-    // <Field>
-    //     <Input className="input is-medium is-rounded" type="text" name='email' placeholder='email' onChange={this.handleEmailChange} />
-    // </Field>
-    // <Field>
-    //     <Input className="input is-medium is-rounded" type="text" name='password' placeholder='password' onChange={this.handlePasswordChange} />
-    // </Field>
-    //
-    // <form onSubmit={this.handleSubmit}>
-    //         <input type="submit" value="Submit" />
-    //         </form>
-
         );
     }
 }
