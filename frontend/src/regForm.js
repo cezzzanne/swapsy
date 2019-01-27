@@ -47,10 +47,14 @@ class RegForm extends React.Component {
                 <div className="field">
             <form>
 <<<<<<< HEAD
+<<<<<<< HEAD
                 <label>
                     Password:
                     <input type="password" name='password' onChange={this.handlePasswordChange} />
                 </label>
+=======
+                    <input className="input is-medium is-rounded" type="text" name='password' placeholder='password' onChange={this.handlePasswordChange} />
+>>>>>>> a504c07f82e1f2f7f970ef2602a9dd5666e047c8
 =======
                     <input className="input is-medium is-rounded" type="text" name='password' placeholder='password' onChange={this.handlePasswordChange} />
 >>>>>>> a504c07f82e1f2f7f970ef2602a9dd5666e047c8
